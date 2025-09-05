@@ -1,5 +1,10 @@
 # weakmap
-[![Go Reference](https://pkg.go.dev/badge/github.com/ammario/weakmap.svg)](https://pkg.go.dev/github.com/ammario/weakmap@main)
+
+This is fork of original [ammario/weakmap](https://github.com/ammario/weakmap) 
+for internal use in my projects. Maybe I'll switch to upstream version someday.
+
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/dpapchenkov/weakmap.svg)](https://pkg.go.dev/github.com/dpapchenkov/weakmap@main)
 
 Package `weakmap` implements a weak map for Go without `unsafe` or pointer magic.
 Instead, it uses finalizers to hook into garbage collection cycles and evicts
@@ -12,7 +17,7 @@ You can carelessly throw stuff into the weak map and let the GC take care of the
 
 Install:
 ```
-go get github.com/ammario/weakmap@main
+go get github.com/dpapchenkov/weakmap@main
 ```
 
 
@@ -22,7 +27,7 @@ go get github.com/ammario/weakmap@main
 > slots. While this behavior is documented, whether the Go Authors consider
 > it apart of the compatibility promise is dubious at best.
 
-See [ammario/tlru](https://github.com/ammario/tlru/tree/master) for
+See [dpapchenkov/tlru](https://github.com/dpapchenkov/tlru/tree/master) for
 a safer, traditional cache implementation.
 
 ## Basic Usage

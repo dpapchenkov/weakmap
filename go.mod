@@ -1,4 +1,4 @@
-module github.com/ammario/weakmap
+module github.com/dpapchenkov/weakmap
 
 go 1.21
 

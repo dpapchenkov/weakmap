@@ -11,7 +11,7 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/ammario/weakmap"
+	"github.com/dpapchenkov/weakmap"
 	"github.com/dustin/go-humanize"
 )
 
